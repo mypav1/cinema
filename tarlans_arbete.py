@@ -1,59 +1,67 @@
 class Person:
+    def __init__(self, first="", last="", persno=0):
+        self.firstname = first
+        self.lastname = last
+        self.personalnumber = persno
 
-    def __init__(self, firstname,lastname,personalnumber):
-        self.List_of_all_members=[]
-        self.firstname=firstname
-        self.List_of_all_members.append(firstname)
-        self.lastname=lastname
-        self.List_of_all_members.append(lastname)
-        self.personalnumber=personalnumber
-        self.List_of_all_members.append(personalnumber)
-
-    def print_name(self):
-        return print(self.firstname, self.lastname, self.personalnumber)
+    def __str__(self):
+        return f"{self.firstname}, {self.lastname}, {self.personalnumber}"
 
     def __repr__(self):
-        return str(self.firstname) + "." + str(self.lastname) + "." + str(self.personalnumber)
+        return f"{self.firstname}, {self.lastname}, {self.personalnumber}"
+
+class Person_Collection:
+
+    def __init__(self):
+        self.List_of_all_members = []
+
+    def add_person(self, person):
+        self.List_of_all_members.append(person)
+
 
     def print_list(self):
         return print(self.List_of_all_members)
 
 
 def main():
-    List_of_all_members = []
+
+    persons = Person_Collection()
+
     while True:
-           try:
-               print("___________Menyval__________")
-               print("Tryck 1 för att spara personuppgifter")
-               print("Tryck 2 för att visa sparade personuppgifter")
-               Val=input("Val:")
-               Val=int(Val)
-           except ValueError:
-               print("Välj endast mellan 1 eller 2!")
+        try:
+            print("___________Menyval__________")
+            print("Tryck 1 för att spara personuppgifter")
+            print("Tryck 2 för att visa sparade personuppgifter")
+            Val = input("Val:")
+            Val = int(Val)
+        except ValueError:
+            print("Välj endast mellan 1 eller 2!")
+
+        if Val == 1:
+            person = Person()
+            person.firstname = input("Skriv in dit Förnamn")
+            person.lastname = input("Skriv in dit efternamn")
+            try:
+                personalnumber = input("Skriv in din personnumber")
+                person.personalnumber = int(personalnumber)
+                persons.add_person(person)
+            except ValueError:
+                print("Endast siffror!")
+
+            with open("Personregister.txt", "a")as f:
+               f.write(f"{person.firstname};{person.lastname};{person.personalnumber}\n")
+
+            person_list_unik = [0, 0, 0]
+            for line in open("Personregister.txt", "r"):
+                data = line.split(";")
+            data[2] = int(data[2])
+            if person_list_unik[2] == person.personalnumber:
+                person_list_unik = data
+            print("Personnumret finns redan registrerad!")
 
 
-           if Val==1:
-               firstname=input("Skriv in dit Förnamn")
-               Inmatning_firstname = Person(firstname,None,None)
-               List_of_all_members.append(firstname)
-               lastname=input("Skriv in dit efternamn")
-               Inmatning_lastname = Person(firstname,lastname,None)
-               List_of_all_members.append(lastname)
-               try:
-                   personalnumber=input("Skriv in din personnumber")
-                   personalnumber=int(personalnumber)
-                   personalnumber = Person(firstname,lastname,personalnumber)
-                   List_of_all_members.append(personalnumber)
-                   personalnumber.print_name()
-               except ValueError:
-                   print("Endast siffror!")
-
-           if Val==2:
-               str1 = "".join(map(str, List_of_all_members))
-               print(str1)
-
-
-
+        if Val == 2:
+            persons.print_list()
 
 
 if __name__ == "__main__":
