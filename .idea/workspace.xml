@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="508b1a2d-6fcd-4d69-b851-574e96d63cdb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Poäng system.py" beforeDir="false" afterPath="$PROJECT_DIR$/Poäng system.py" afterDir="false" />
+    <list default="true" id="33c15e4e-6583-4f34-aa5d-30b3b86ba05b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Personregister.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Personregister.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tarlans_arbete.py" beforeDir="false" afterPath="$PROJECT_DIR$/tarlans_arbete.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,26 +25,26 @@
         <counts>
           <entry key="Personregister" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="py" value="10" />
-          <entry key="txt" value="1" />
+          <entry key="py" value="18" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="10" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Personregister" value="36" />
-          <entry key="py" value="5164" />
+          <entry key="py" value="6824" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="36" />
-          <entry key="Python" value="5164" />
+          <entry key="Python" value="6824" />
         </counts>
       </usages-collector>
     </session>
@@ -58,15 +57,54 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tarlans_arbete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="956">
+              <caret line="262" column="16" lean-forward="true" selection-start-line="262" selection-start-column="16" selection-end-line="262" selection-end-column="16" />
               <folding>
-                <marker date="1541156221838" expanded="true" signature="13:364" ph="..." />
-                <marker date="1541156221838" expanded="true" signature="413:457" ph="..." />
-                <marker date="1541156221838" expanded="true" signature="535:536" ph="..." />
-                <marker date="1541156221838" expanded="true" signature="610:612" ph="..." />
-                <marker date="1541156221838" expanded="true" signature="623:1972" ph="..." />
+                <marker date="1541506868375" expanded="true" signature="42:51" ph="..." />
+                <marker date="1541506868375" expanded="true" signature="255:264" ph="..." />
+                <marker date="1541506868375" expanded="true" signature="383:392" ph="..." />
+                <marker date="1541506868375" expanded="true" signature="484:493" ph="..." />
+                <marker date="1541506868375" expanded="true" signature="586:591" ph="..." />
+                <marker date="1541506868375" expanded="true" signature="722:727" ph="..." />
+                <marker date="1541506868375" expanded="true" signature="1124:1125" ph="..." />
+                <marker date="1541506868375" expanded="true" signature="1124:1129" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/svea.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/greta.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="94" selection-start-line="2" selection-start-column="94" selection-end-line="2" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thor.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Filmer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -74,23 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Personregister.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Poäng system.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-              <folding>
-                <marker date="1541076358853" expanded="true" signature="17:697" ph="..." />
-                <marker date="1541076358853" expanded="true" signature="1243:1245" ph="..." />
-                <marker date="1541076358853" expanded="true" signature="2310:2312" ph="..." />
-              </folding>
-            </state>
+            <state relative-caret-position="-415" />
           </provider>
         </entry>
       </file>
@@ -105,6 +127,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -114,8 +141,14 @@
         <option value="$PROJECT_DIR$/MainMenu.py" />
         <option value="$PROJECT_DIR$/Snack Menu.py" />
         <option value="$PROJECT_DIR$/Personregister" />
-        <option value="$PROJECT_DIR$/Personregister.txt" />
         <option value="$PROJECT_DIR$/Poäng system.py" />
+        <option value="$PROJECT_DIR$/Mainmenu.py" />
+        <option value="$PROJECT_DIR$/Personregister.txt" />
+        <option value="$PROJECT_DIR$/Snack_menu.py" />
+        <option value="$PROJECT_DIR$/Filmer.py" />
+        <option value="$PROJECT_DIR$/svea.txt" />
+        <option value="$PROJECT_DIR$/greta.txt" />
+        <option value="$PROJECT_DIR$/thor.txt" />
         <option value="$PROJECT_DIR$/tarlans_arbete.py" />
       </list>
     </option>
@@ -127,6 +160,9 @@
     <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -172,6 +208,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MainMenu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Mainmenu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="biografi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mainmenu.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -243,41 +300,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tarlans_arbete" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="biografi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cinema" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cinema/tarlans_arbete.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.tarlans_arbete" />
       <item itemvalue="Python.tarlans_arbete (1)" />
       <item itemvalue="Python.Poäng system" />
       <item itemvalue="Python.MainMenu" />
       <item itemvalue="Python.Salong" />
+      <item itemvalue="Python.Mainmenu" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.tarlans_arbete (1)" />
+        <item itemvalue="Python.Mainmenu" />
         <item itemvalue="Python.Poäng system" />
         <item itemvalue="Python.MainMenu" />
         <item itemvalue="Python.Salong" />
-        <item itemvalue="Python.tarlans_arbete" />
       </list>
     </recent_temporary>
   </component>
@@ -295,10 +331,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49633253" visible="true" weight="0.24330357" />
-      <window_info id="Structure" order="1" sideWeight="0.5036675" side_tool="true" visible="true" weight="0.24330357" />
+      <window_info id="Structure" order="1" sideWeight="0.5036675" side_tool="true" weight="0.24330357" />
       <window_info id="Favorites" order="2" sideWeight="0.5012225" side_tool="true" weight="0.24330357" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -326,59 +363,90 @@
     <entry file="file://$PROJECT_DIR$/cinema/mainmenu.py" />
     <entry file="file://$PROJECT_DIR$/cinema/tarlans_arbete.py" />
     <entry file="file://$PROJECT_DIR$/cinema/cinema.py" />
-    <entry file="file://$PROJECT_DIR$/MainMenu.py">
+    <entry file="file://$PROJECT_DIR$/salong.py" />
+    <entry file="file://$PROJECT_DIR$/Snack Menu.py" />
+    <entry file="file://$PROJECT_DIR$/Personregister" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+        <state relative-caret-position="-244">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Salong.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/urllib/parse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="106">
+          <caret line="777" selection-start-line="777" selection-end-line="777" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Snack Menu.py">
+    <entry file="file://$PROJECT_DIR$/Snack_menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="-948">
+          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Personregister">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Mainmenu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Poäng system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-          <folding>
-            <marker date="1541076358853" expanded="true" signature="17:697" ph="..." />
-            <marker date="1541076358853" expanded="true" signature="1243:1245" ph="..." />
-            <marker date="1541076358853" expanded="true" signature="2310:2312" ph="..." />
-          </folding>
+        <state relative-caret-position="412">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thor.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Filmer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greta.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="94" selection-start-line="2" selection-start-column="94" selection-end-line="2" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svea.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="108" selection-start-line="3" selection-start-column="108" selection-end-line="3" selection-end-column="108" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Personregister.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
+        <state relative-caret-position="-415" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tarlans_arbete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="956">
+          <caret line="262" column="16" lean-forward="true" selection-start-line="262" selection-start-column="16" selection-end-line="262" selection-end-column="16" />
           <folding>
-            <marker date="1541156221838" expanded="true" signature="13:364" ph="..." />
-            <marker date="1541156221838" expanded="true" signature="413:457" ph="..." />
-            <marker date="1541156221838" expanded="true" signature="535:536" ph="..." />
-            <marker date="1541156221838" expanded="true" signature="610:612" ph="..." />
-            <marker date="1541156221838" expanded="true" signature="623:1972" ph="..." />
+            <marker date="1541506868375" expanded="true" signature="42:51" ph="..." />
+            <marker date="1541506868375" expanded="true" signature="255:264" ph="..." />
+            <marker date="1541506868375" expanded="true" signature="383:392" ph="..." />
+            <marker date="1541506868375" expanded="true" signature="484:493" ph="..." />
+            <marker date="1541506868375" expanded="true" signature="586:591" ph="..." />
+            <marker date="1541506868375" expanded="true" signature="722:727" ph="..." />
+            <marker date="1541506868375" expanded="true" signature="1124:1125" ph="..." />
+            <marker date="1541506868375" expanded="true" signature="1124:1129" ph="..." />
           </folding>
         </state>
       </provider>
