@@ -23,22 +23,51 @@ class Movie_info:
             return i.readlines()
 
 
-class Salons:
-    def __init__(self,Salon1,Salon2,Salon3):
-        self.salon1 = Salon1(name="Svea", points=140, seats=200)
-        self.salon2 = Salon2(name="Thor", points=100, seats=150)
-        self.salon3 = Salon3(name="Greta", points=80, seats=100)
-        self.salons = [self.salon1, self.salon2, self.salon3]
-
-
+class Salon1:
+    def __init__(self,namn="Svea",pris=140,seats=200):
+        self.namn = namn
+        self.pris = pris
+        self.seats = seats
 
     def __str__(self):
-         return f"{self.salon1} har {self.salon2} platser och kostar {self.salon3} poäng"
+        return f"{self.namn} har {self.pris} platser och kostar {self.seats} poäng"
 
-    def print_movies(self):
-        for i, salon in enumerate(self.salons):
-            print("Salong", i + 1, salon)
+    def __repr__(self):
+        return f"{self.namn} har {self.pris} platser och kostar {self.seats} poäng"
 
+    def print_film2(self):
+        print(str(self.namn) + "--" + "filmen kostar" + " " + str(self.pris) + "--" + "poäng och har " + str(
+            self.seats) + "--" + "sittålatser")
+class Salon2:
+    def __init__(self,namn="Greta",pris=80,seats=100):
+        self.namn=namn
+        self.pris=pris
+        self.seats=seats
+
+    def __str__(self):
+        return f"{self.namn} har {self.pris} platser och kostar {self.seats} poäng"
+
+    def __repr__(self):
+        return f"{self.namn} har {self.pris} platser och kostar {self.seats} poäng"
+
+    def print_film1(self):
+        print(str(self.namn) + "--" + "filmen kostar" + " " + str(self.pris) + "--" + "poäng och har " + str(
+            self.seats) + "--" + "sittålatser")
+
+class Salon3:
+    def __init__(self,namn="Thor",pris=100,seats=150):
+        self.namn=namn
+        self.pris=pris
+        self.seats=seats
+
+    def __str__(self):
+         return f"{self.namn}, {self.pris},  {self.seats}"
+
+    def __repr__(self):
+        return f"{self.namn}, {self.pris} , {self.seats}"
+
+    def print_film(self):
+         print(str(self.namn)+ "--"+"filmen kostar"+" "+str(self.pris)+"--"+ "poäng och har "+str(self.seats)+ "--"+"sittålatser")
 
 class Person:
     def __init__(self, first="", last="", persno=0):
@@ -154,7 +183,10 @@ def main():
     combo = Combo_menu()
     movie=Movie_info()
 
-    salong=Salons()
+    salong1=Salon1()
+    salong2=Salon2()
+    salong3=Salon3()
+
     while True:
         print("1. Skapa nytt konto:")
         print("2. Saldokollen:")
@@ -216,9 +248,8 @@ def main():
                 if chooise == 1:
                     try:
 
-                        point.spenderade_point = salong.Salon1.points.None
-                        point.spenderade_point=salong.Salon1.name
-                        point.spenderade_point=salong.Salon1.seats
+
+
 
                         points.print_saldo(point.spenderade_point, point.saldo)
 
@@ -256,8 +287,20 @@ def main():
               point.saldo=combo.drink
               points.add_saldo(point)
               points.add_saldo(point)
-           if choise == 4:
+           elif val==4:
                break
+
+        if choise == 4:
+
+           print("Nedan väljer du filmer som visas på bio!")
+           print(salong1.print_film2())
+           print(salong2.print_film1())
+           print(salong3.print_film())
+
+
+
+
+
 
         if choise == 5:
             break
