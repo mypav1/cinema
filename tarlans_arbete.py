@@ -32,8 +32,6 @@ class Salon1:
     def __str__(self):
         return f"{self.namn} har {self.pris} platser och kostar {self.seats} poäng"
 
-    def __repr__(self):
-        return f"{self.namn} har {self.pris} platser och kostar {self.seats} poäng"
 
     def print_film2(self):
         print(str(self.namn) + "--" + "filmen kostar" + " " + str(self.pris) + "--" + "poäng och har " + str(
@@ -47,8 +45,6 @@ class Salon2:
     def __str__(self):
         return f"{self.namn} har {self.pris} platser och kostar {self.seats} poäng"
 
-    def __repr__(self):
-        return f"{self.namn} har {self.pris} platser och kostar {self.seats} poäng"
 
     def print_film1(self):
         print(str(self.namn) + "--" + "filmen kostar" + " " + str(self.pris) + "--" + "poäng och har " + str(
@@ -63,8 +59,6 @@ class Salon3:
     def __str__(self):
          return f"{self.namn}, {self.pris},  {self.seats}"
 
-    def __repr__(self):
-        return f"{self.namn}, {self.pris} , {self.seats}"
 
     def print_film(self):
          print(str(self.namn)+ "--"+"filmen kostar"+" "+str(self.pris)+"--"+ "poäng och har "+str(self.seats)+ "--"+"sittålatser")
@@ -292,10 +286,16 @@ def main():
 
         if choise == 4:
 
-           print("Nedan väljer du filmer som visas på bio!")
-           print(salong1.print_film2())
-           print(salong2.print_film1())
-           print(salong3.print_film())
+         val3=int(input("Nedan väljer du filmer som visas på bio!"))
+         if val3==1:
+             print(salong1.print_film2())
+             print( movie.format_movie(movie))
+         elif val3==2:
+             print(salong2.print_film1())
+         elif val3==3:
+             print(salong3.print_film())
+         else:
+             pass
 
 
 
