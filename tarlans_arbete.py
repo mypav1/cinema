@@ -88,8 +88,6 @@ class Saldo_Menu:
             print("Tyvär du har inte tillräcklig med poäng!" + "--" + str(self.saldo) + "Kr")
             return self.saldo
         if self.spenderade_point == 0:
-            return str(self.saldo)
-        else:
             print(str(self.saldo) + "Kr har sparats")
 
 
@@ -100,7 +98,6 @@ class Point:
 
     def add_saldo(self,point):
         self.list_saldo.append(point)
-
 
     def print_saldo(self, spenderade_point,saldo):
         print(str(sum([value.saldo for value in self.list_saldo]) - spenderade_point) + "Kr har kvar i kontot")
@@ -210,26 +207,52 @@ def main():
                         print("1.Saldo")
                         print("2.Spendering av poäng")
                         print("3.Plånboken")
-                        print("4.Exit")
+                        print("4.Kontoladning")
+                        print("5.Exit")
                         while True:
                             try:
                                 chooise = input("Välj:__")
                                 chooise = int(chooise)
                             except ValueError:
-                                print("Välj endast mellan 1 till 4!")
+                                print("Välj endast mellan 1 till 5!")
                             if chooise == 1:
-                                try:
-                                    points.print_saldo(point.spenderade_point, point.saldo)
-                                except ValueError:
-                                    print("Summan i sifror endast!")
-                            if chooise == 2:
+                                 points.print_saldo(point.spenderade_point, point.saldo)
+
+                            elif chooise == 2:
                                 points.print_list(point)
-                            if chooise == 3:
+                            elif chooise == 3:
                                 point.info()
                                 """
                                 Här ska vara filmer som man väler för att få bonus laddat på kontot. Vi ska koppla den 
                                 delen ihop med där man väljer filmer"""
-                            if chooise==4:
+                            elif chooise==4:
+                                while True:
+                                    print("1. 100p =100kr")
+                                    print("2. 150p =150kr")
+                                    print("3. 500p =500kr")
+                                    print("4. 1000p =1000kr")
+                                    print("5. Exit")
+                                    print("Välj summan som du vill ladda!")
+                                    try:
+                                        charge=input("Välj:")
+                                        charge=int(charge)
+                                    except ValueError:
+                                        print("Välj endast mellan 1 till 5")
+                                    if charge==1:
+                                        point.saldo=100
+                                        points.add_saldo(point)
+                                    elif charge==2:
+                                        point.saldo=150
+                                        points.add_saldo(point)
+                                    elif charge==3:
+                                        point.saldo=500
+                                        points.add_saldo(point)
+                                    elif charge==4:
+                                        point.saldo=1000
+                                        points.add_saldo(point)
+                                    elif charge==5:
+                                        break
+                            elif chooise==5:
                                 break
                     if choise == 2:
                        print("¤¤¤¤¤¤Snack Meny¤¤¤¤¤¤")
@@ -253,16 +276,14 @@ def main():
                           points.add_saldo(point)
                        elif val==4:
                            break
-                       elif val==5:
-                           point.saldo=100
+
                     if choise == 3:
-
                         print("*" * 50)
-                        print(f"1: {salong1} och visar filmen Sound Of Music")
-                        print(f"2: {salong2} och visar filmen Ragnarök")
-                        print(f"3: {salong3} och visar filmen Surviving Summer")
+                        print(f"1: Sound Of Music")
+                        print(f"2: Ragnarök")
+                        print(f"3: Surviving Summer")
+                        print(f"4: Boka film")
                         print("*" * 50)
-
                         val3 = int(input("Välj vilken film du vill läsa om:"))
                         if val3 == 1:
                             print("*" * 19)
@@ -276,14 +297,33 @@ def main():
                             print("*" * 21)
                             print(movie_info.format_movie(movie_info.movie_greta()))
                             print("*" * 94)
+                        elif val3 == 4:
+                            print("*" * 50)
+                            print(f"1: {salong1} och visar filmen Sound Of Music")
+                            print(f"2: {salong2} och visar filmen Ragnarök")
+                            print(f"3: {salong3} och visar filmen Surviving Summer")
+                            print("*" * 50)
+                            val4 = int(input("Välj vilken film du vill boka"))
+                            if val4 == 1:
+                                print("*" * 10)
+                                print("Du har bokat filmen Sound Of Music")
+                                print(f"Som visas i salong {salong1.namn} och kostar {salong1.pris} Poäng")
 
-                    if choise == 4:
-
-                        break
-
+                                salong1.pris = point.spenderade_point
+                                points.add_saldo(point)
+                                print("*" * 10)
+                            elif val4 == 2:
+                                print("*" * 10)
+                                print("Du har bokat filmen Ragnarök")
+                                print(f"Som visas i salong {salong2.namn} och kostar {salong2.pris} Poäng")
+                                print("*" * 10)
+                            elif val4 == 3:
+                                print("*" * 10)
+                                print("Du har bokat filmen Surviving Summer")
+                                print(f"Som visas i salong {salong3.namn} och kostar {salong3.pris} Poäng")
+                                print("*" * 10)
                     if choise == 5:
-
-                            break
+                        break
 if __name__ == "__main__":
 
     main()
