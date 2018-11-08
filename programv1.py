@@ -10,15 +10,15 @@ class Movie_info:
         return result
 
     def movie_svea(self):
-        with open("svea.txt", "r") as i:
+        with open("svea.txt", "r", encoding="utf-8") as i:
             return i.readlines()
 
     def movie_thor(self):
-        with open("thor.txt", "r") as i:
+        with open("thor.txt", "r", encoding="utf-8") as i:
             return i.readlines()
 
     def movie_greta(self):
-        with open("greta.txt", "r") as i:
+        with open("greta.txt", "r", encoding="utf-8") as i:
             return i.readlines()
 
 class Salon:

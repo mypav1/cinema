@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15d7be06-04f4-4cbd-9847-ab746f5d9652" name="Default Changelist" comment="" />
+    <list default="true" id="15d7be06-04f4-4cbd-9847-ab746f5d9652" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Personregister.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Personregister.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainmenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainmenu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programv1.py" beforeDir="false" afterPath="$PROJECT_DIR$/programv1.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,14 +35,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10258" />
+          <entry key="py" value="10266" />
           <entry key="txt" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="29" />
-          <entry key="Python" value="10258" />
+          <entry key="Python" value="10266" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -64,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/salong.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="555">
+              <caret line="139" column="6" lean-forward="true" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -92,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/salongerv1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1513">
+            <state relative-caret-position="204">
               <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding>
                 <marker date="1541679279946" expanded="true" signature="1343:1845" ph="..." />
@@ -103,20 +107,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/programv1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1666">
-              <caret line="284" column="8" selection-start-line="284" selection-start-column="8" selection-end-line="284" selection-end-column="8" />
+            <state relative-caret-position="640">
+              <caret line="287" column="17" lean-forward="true" selection-start-line="261" selection-start-column="8" selection-end-line="287" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mainmenu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+            <state relative-caret-position="215">
+              <caret line="265" column="35" lean-forward="true" selection-start-line="265" selection-start-column="35" selection-end-line="265" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -185,7 +189,6 @@
         <option value="$PROJECT_DIR$/personclass.py" />
         <option value="$PROJECT_DIR$/pointsystem.py" />
         <option value="$PROJECT_DIR$/SamtligaFIlmer.txt" />
-        <option value="$PROJECT_DIR$/mainmenu.py" />
         <option value="$PROJECT_DIR$/salong.py" />
         <option value="$PROJECT_DIR$/samtligafilmer.txt" />
         <option value="$PROJECT_DIR$/svea.txt" />
@@ -196,6 +199,7 @@
         <option value="$PROJECT_DIR$/thor.txt" />
         <option value="$PROJECT_DIR$/greta.txt" />
         <option value="$PROJECT_DIR$/programv1.py" />
+        <option value="$PROJECT_DIR$/mainmenu.py" />
       </list>
     </option>
   </component>
@@ -239,7 +243,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.programv1">
+  <component name="RunManager" selected="Python.mainmenu">
+    <configuration name="mainmenu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cinema" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainmenu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="programv1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cinema" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,27 +278,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/programv1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="salong" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="cinema" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/salong.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -347,18 +351,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.snack_menu" />
-      <item itemvalue="Python.salong" />
       <item itemvalue="Python.salonger" />
       <item itemvalue="Python.programv1" />
       <item itemvalue="Python.salongerv1" />
+      <item itemvalue="Python.mainmenu" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mainmenu" />
         <item itemvalue="Python.programv1" />
         <item itemvalue="Python.salonger" />
         <item itemvalue="Python.salongerv1" />
         <item itemvalue="Python.snack_menu" />
-        <item itemvalue="Python.salong" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +393,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50033045" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -397,6 +401,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.098479845" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49966952" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50033045" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -444,36 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/salongerv1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1513">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <marker date="1541679279946" expanded="true" signature="1343:1845" ph="..." />
-            <marker date="1541679279946" expanded="true" signature="1868:1873" ph="..." />
-            <marker date="1541679279946" expanded="true" signature="2788:2792" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/salong.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pointsystem.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainmenu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -491,13 +488,6 @@
             <marker date="1541679279945" expanded="true" signature="1233:1242" ph="..." />
             <marker date="1541679279945" expanded="true" signature="1369:1447" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Personregister.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -522,10 +512,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Personregister.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/salongerv1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <marker date="1541679279946" expanded="true" signature="1343:1845" ph="..." />
+            <marker date="1541679279946" expanded="true" signature="1868:1873" ph="..." />
+            <marker date="1541679279946" expanded="true" signature="2788:2792" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/salong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="139" column="6" lean-forward="true" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/programv1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="284" column="8" selection-start-line="284" selection-start-column="8" selection-end-line="284" selection-end-column="8" />
+        <state relative-caret-position="640">
+          <caret line="287" column="17" lean-forward="true" selection-start-line="261" selection-start-column="8" selection-end-line="287" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainmenu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="265" column="35" lean-forward="true" selection-start-line="265" selection-start-column="35" selection-end-line="265" selection-end-column="35" />
         </state>
       </provider>
     </entry>
