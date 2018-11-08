@@ -49,8 +49,7 @@ class Menus:
             print("Meny", i + 1, menu)
 
     def kioskmenu(self):
-        self.choices = {
-            "1": self.menues
+        pass
 
     def menu_print1(self):
         print("""
