@@ -50,7 +50,7 @@ class Menus:
 
     def kioskmenu(self):
         self.choices = {
-            "1": self.menues}
+            "1": self.menues
 
     def menu_print1(self):
         print("""
