@@ -70,25 +70,28 @@ class Person_Collection:
 
 class Saldo_Menu:
 
-    def __init__(self,saldo=0, spenderade_point=0,bonus=0):
+    def __init__(self,saldo=0,spenderade_point=0,bonus=0):
         self.saldo=saldo
         self.spenderade_point=spenderade_point
         self.bonus=bonus
 
+
+
     def __str__(self):
-        return f"{self.saldo}, {self.spenderade_point}, {self.bonus}"
+        return f"{self.saldo},{self.spenderade_point}, "
 
 
     def __repr__(self):
-        return f"{self.saldo}, {self.spenderade_point}, {self.bonus}"
+        return f"{self.saldo}, {self.spenderade_point}, "
 
     def info (self):
 
         if self.saldo == 0:
             print("Tyvär du har inte tillräcklig med poäng!" + "--" + str(self.saldo) + "Kr")
             return self.saldo
-        if self.spenderade_point == 0:
+        else:
             print(str(self.saldo) + "Kr har sparats")
+
 
 
 class Point:
@@ -99,10 +102,14 @@ class Point:
     def add_saldo(self,point):
         self.list_saldo.append(point)
 
+
     def print_saldo(self, spenderade_point,saldo):
-        print(str(sum([value.saldo for value in self.list_saldo]) - spenderade_point) + "Kr har kvar i kontot")
-        if spenderade_point>saldo:
+        if spenderade_point>0:
+            print(str(sum(([value.saldo for value in self.list_saldo]+[value.bonus for value in self.list_saldo])) - spenderade_point) + "Kr har kvar i kontot")
+        elif spenderade_point>saldo:
             print("Tyvärr går ej handla mer än det som du har!")
+        else:
+            print("Saldot är tomt")
 
     def print_list(self,point):
         for i in self.list_saldo:
@@ -216,7 +223,7 @@ def main():
                             except ValueError:
                                 print("Välj endast mellan 1 till 5!")
                             if chooise == 1:
-                                 points.print_saldo(point.spenderade_point, point.saldo)
+                                points.print_saldo(point.spenderade_point, point.saldo)
 
                             elif chooise == 2:
                                 points.print_list(point)
@@ -238,18 +245,25 @@ def main():
                                         charge=int(charge)
                                     except ValueError:
                                         print("Välj endast mellan 1 till 5")
+
                                     if charge==1:
-                                        point.saldo=100
+                                        pris=100
+                                        point.saldo=pris
                                         points.add_saldo(point)
                                     elif charge==2:
-                                        point.saldo=150
+                                        pris2=150
+                                        point.saldo=pris2
                                         points.add_saldo(point)
                                     elif charge==3:
-                                        point.saldo=500
+                                        pris3=500
+                                        point.saldo=pris3
                                         points.add_saldo(point)
+
                                     elif charge==4:
-                                        point.saldo=1000
+                                        pris4=1000
+                                        point.saldo=pris4
                                         points.add_saldo(point)
+
                                     elif charge==5:
                                         break
                             elif chooise==5:
@@ -273,7 +287,7 @@ def main():
                           point.spenderade_point=combo.snack
                           point.spenderade_point=combo.drink
                           points.add_saldo(point)
-                          points.add_saldo(point)
+
                        elif val==4:
                            break
 
@@ -284,7 +298,11 @@ def main():
                         print(f"3: Surviving Summer")
                         print(f"4: Boka film")
                         print("*" * 50)
-                        val3 = int(input("Välj vilken film du vill läsa om:"))
+                        try:
+                            val3 =input("Välj vilken film du vill läsa om:")
+                            val3=int(val3)
+                        except ValueError:
+                            print("Välj endast mellan 1 till 4!")
                         if val3 == 1:
                             print("*" * 19)
                             print(movie_info.format_movie(movie_info.movie_svea()))
@@ -303,24 +321,37 @@ def main():
                             print(f"2: {salong2} och visar filmen Ragnarök")
                             print(f"3: {salong3} och visar filmen Surviving Summer")
                             print("*" * 50)
-                            val4 = int(input("Välj vilken film du vill boka"))
+                            try:
+                                val4 = input("Välj vilken film du vill boka")
+                                val4=int(val4)
+                            except ValueError:
+                                print("Välj endast mellan 1 till 3!")
                             if val4 == 1:
                                 print("*" * 10)
                                 print("Du har bokat filmen Sound Of Music")
                                 print(f"Som visas i salong {salong1.namn} och kostar {salong1.pris} Poäng")
-
-                                salong1.pris = point.spenderade_point
+                                bonus=10
+                                point.bonus=bonus
+                                point.spenderade_point = salong1.pris
                                 points.add_saldo(point)
                                 print("*" * 10)
                             elif val4 == 2:
                                 print("*" * 10)
                                 print("Du har bokat filmen Ragnarök")
                                 print(f"Som visas i salong {salong2.namn} och kostar {salong2.pris} Poäng")
+                                bonus = 10
+                                point.bonus=bonus
+                                point.spenderade_point = salong2.pris
+                                points.add_saldo(point)
                                 print("*" * 10)
                             elif val4 == 3:
                                 print("*" * 10)
                                 print("Du har bokat filmen Surviving Summer")
                                 print(f"Som visas i salong {salong3.namn} och kostar {salong3.pris} Poäng")
+                                bonus = 10
+                                point.bonus=bonus
+                                point.spenderade_point = salong3.pris
+                                points.add_saldo(point)
                                 print("*" * 10)
                     if choise == 5:
                         break
