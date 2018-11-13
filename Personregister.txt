@@ -9,3 +9,5 @@ hej;hopp;1234
 hehejfddsaf;dsfsdf;12345
 asd;asd;1122
 2;3;4
+0;9o;0
+1122;1122;1122
