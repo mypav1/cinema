@@ -1,0 +1,54 @@
+#Rad 120
+class Snack_menu:
+
+    def __init__(self, snack=20):
+        self.points = snack
+
+    def __str__(self):
+        return f"{self.points},  points"
+
+    def __repr__(self):
+        return f"{self.points},  points"
+
+
+class Drink_menu:
+
+    def __init__(self, drink=20):
+        self.points = drink
+
+    def __str__(self):
+        return f"{self.points}, points"
+
+    def __repr__(self):
+        return f"{self.points}, points"
+
+
+class Combo_menu:
+    def __init__(self, points=30):
+        self.drink = Drink_menu()
+        self.snack = Snack_menu()
+        self.points = points
+
+    def __str__(self):
+        return f"{self.snack}, {self.drink}, {self.points} points"
+
+    def __repr__(self):
+        return f"{self.snack}, {self.drink}, {self.points} points"
+
+
+#Rad 273
+                       if val==1:
+
+                          point.spenderade_point=snack.points
+                          points.add_saldo(point)
+                       elif val==2:
+                          point.spenderade_point=drink.points
+                          points.add_saldo(point)
+                       elif val==3:
+
+                          point.spenderade_point=combo.points
+                          point.spenderade_point=combo.points
+                          points.add_saldo(point)
+
+                       elif val==4:
+                           break
