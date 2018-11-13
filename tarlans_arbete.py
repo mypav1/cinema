@@ -210,13 +210,14 @@ def main():
                         print("Endast 1 till 4!")
                     print("*" * 25)
                     if choise == 1:
-                        print("___________MENU____________")
-                        print("1.Saldo")
-                        print("2.Spendering av poäng")
-                        print("3.Plånboken")
-                        print("4.Kontoladning")
-                        print("5.Exit")
                         while True:
+                            print("___________MENU____________")
+                            print("1.Saldo")
+                            print("2.Spendering av poäng")
+                            print("3.Plånboken")
+                            print("4.Kontoladning")
+                            print("5.Exit")
+
                             try:
                                 chooise = input("Välj:__")
                                 chooise = int(chooise)
