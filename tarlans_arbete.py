@@ -104,7 +104,7 @@ class Point:
 
 
     def print_saldo(self, spenderade_point,saldo):
-        if spenderade_point>0:
+        if spenderade_point>=0:
             print(str(sum(([value.saldo for value in self.list_saldo]+[value.bonus for value in self.list_saldo])) - spenderade_point) + "Kr har kvar i kontot")
         elif spenderade_point>saldo:
             print("Tyvärr går ej handla mer än det som du har!")
@@ -246,26 +246,21 @@ def main():
                                     except ValueError:
                                         print("Välj endast mellan 1 till 5")
 
+
                                     if charge==1:
-                                        pris=100
-                                        point.saldo=pris
-                                        points.add_saldo(point)
+                                        points.add_saldo(Saldo_Menu(100))
                                     elif charge==2:
-                                        pris2=150
-                                        point.saldo=pris2
-                                        points.add_saldo(point)
+                                        points.add_saldo(Saldo_Menu(150))
                                     elif charge==3:
-                                        pris3=500
-                                        point.saldo=pris3
-                                        points.add_saldo(point)
+                                        points.add_saldo(Saldo_Menu(500))
 
                                     elif charge==4:
-                                        pris4=1000
-                                        point.saldo=pris4
-                                        points.add_saldo(point)
+                                        points.add_saldo(Saldo_Menu(1000))
 
                                     elif charge==5:
                                         break
+
+
                             elif chooise==5:
                                 break
                     if choise == 2:
