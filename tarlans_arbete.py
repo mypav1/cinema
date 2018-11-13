@@ -165,9 +165,9 @@ def main():
     drink = Drink_menu()
     combo = Combo_menu()
     movie_info = Movie_info()
-    salong1 = Salon("Svea", 140, 200)
-    salong2 = Salon("Thor", 100, 150)
-    salong3 = Salon("Greta", 80, 100)
+    salong1 = Salon("Svea", 200, 140)
+    salong2 = Salon("Thor", 150, 100)
+    salong3 = Salon("Greta", 100, 80)
     while True:
         print(" --Skapa nytt konto--")
         print("*" * 25)
