@@ -66,6 +66,9 @@ class Person_Collection:
     def print_list(self):
         return print(self.List_of_all_members)
 
+    def input_person_info(self):
+        self.first_name = input("Skriv in ditt förnamn:")
+        self.last_name = input("Skriv in ditt efternamn:")
 
 
 class Saldo_Menu:

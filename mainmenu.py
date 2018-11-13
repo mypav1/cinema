@@ -38,9 +38,6 @@ class Salon:
 
 
 
-
-
-
 class Person:
     def __init__(self, first="", last="", persno=0):
         self.firstname = first
@@ -54,9 +51,15 @@ class Person:
     def __repr__(self):
         return f"{self.firstname}, {self.lastname}, {self.personalnumber}"
 
+    def input_person_info(self):
+        self.first = input("Skriv in ditt förnamn:")
+        self.last = input("Skriv in ditt efternamn:")
+        self.persno = input("Skriv in ditt personnr:")
+        return self
 
 
-class Person_Collection:
+
+class Person_collection:
     def __init__(self):
         self.List_of_all_members = []
 
@@ -156,202 +159,114 @@ class Combo_menu(Drink_menu, Snack_menu):
        return f"{self.snack}, {self.drink}, {self.p} points"
 
 
-def main():
-    persons = Person_Collection()
-    point = Saldo_Menu()
-    points = Point()
-    person = Person()
-    snack = Snack_menu()
-    drink = Drink_menu()
-    combo = Combo_menu()
-    movie_info = Movie_info()
-    salong1 = Salon("Svea", 200, 140)
-    salong2 = Salon("Thor", 150, 100)
-    salong3 = Salon("Greta", 100, 80)
-    while True:
-        print(" --Skapa nytt konto--")
+
+class Menus:
+    def __init__(self):
+        self.salong1 = Salon("Svea", 200, 140)
+        self.salong2 = Salon("Thor", 150, 100)
+        self.salong3 = Salon("Greta", 100, 80)
+        self.person = Person()
+        self.persons = Person_collection()
+        self.saldo = Saldo_Menu()
+        self.points = Point()
+
+
+
+    def print_new_user_menu(self):
+        print("Huvudmeny:")
+        print("Tryck 1 för att spara personuppgifter")
+        print("Tryck 2 för att visa sparade personuppgifter")
+        print("Tryck 3 för att gå till huvudmenyn!")
+
+    def run_new_user_menu(self):
+        self.print_new_user_menu()
+        choice = input("Ange ditt val: ")
+        choice = int(choice)
+        if choice == 1:
+            self.person.input_person_info()
+        if choice == 2:
+            self.persons.print_list()
+        if choice == 3:
+            self.print_main_menu()
+            self.run_main_menu()
+        else:
+            print("felaktig inmatning")
+
+    def print_main_menu(self):
+        print("1. Saldokollen")
+        print("2. Handla i kiosk")
+        print("3. Kolla aktuella filmer")
+        print("4. Avsluta programmet")
         print("*" * 25)
-        try:
-            print("___________Menyval__________")
-            print("Tryck 1 för att spara personuppgifter")
-            print("Tryck 2 för att visa sparade personuppgifter")
-            print("Tryck 3 för att gå till huvudmenun!")
-            val1 = input("Val:")
-            val1 = int(val1)
-        except ValueError:
-            print("Välj endast mellan 1 eller 3!")
-        if val1 == 1:
-            person.firstname = input("Skriv in dit Förnamn")
-            person.lastname = input("Skriv in dit efternamn")
-            try:
-                personalnumber = input("Skriv in din personnumber")
-                person.personalnumber = int(personalnumber)
-                persons.add_person(person)
-            except ValueError:
-                print("Endast siffror!")
-            with open("Personregister.txt", "a")as f:
-                f.write(f"{person.firstname};{person.lastname};{person.personalnumber}\n")
-        if val1 == 2:
-            persons.print_list()
-        if val1==3:
-            i=input("Skriv din personnummer!:")
-            numbers = [line.split(';')[2].rstrip() for line in open('Personregister.txt', 'r')]
-            if i in numbers:
-                while True:
-                    print("1. Saldokollen")
-                    print("2. Handla i kiosk")
-                    print("3. Kolla aktuella filmer")
-                    print("4. Avsluta programmet")
-                    print("*" * 25)
-                    try:
-                        choise = input("Ange ditt val: ")
-                        choise=int(choise)
-                    except ValueError:
-                        print("Endast 1 till 4!")
-                    print("*" * 25)
-                    if choise == 1:
-                        while True:
-                            print("___________MENU____________")
-                            print("1.Saldo")
-                            print("2.Spendering av poäng")
-                            print("3.Plånboken")
-                            print("4.Kontoladning")
-                            print("5.Exit")
-
-                            try:
-                                chooise = input("Välj:__")
-                                chooise = int(chooise)
-                            except ValueError:
-                                print("Välj endast mellan 1 till 5!")
-                            if chooise == 1:
-                                points.print_saldo(point.spenderade_point, point.saldo)
-
-                            elif chooise == 2:
-                                points.print_list(point)
-                            elif chooise == 3:
-                                point.info()
-                                """
-                                Här ska vara filmer som man väler för att få bonus laddat på kontot. Vi ska koppla den 
-                                delen ihop med där man väljer filmer"""
-                            elif chooise==4:
-                                while True:
-                                    print("1. 100p =100kr")
-                                    print("2. 150p =150kr")
-                                    print("3. 500p =500kr")
-                                    print("4. 1000p =1000kr")
-                                    print("5. Exit")
-                                    print("Välj summan som du vill ladda!")
-                                    try:
-                                        charge=input("Välj:")
-                                        charge=int(charge)
-                                    except ValueError:
-                                        print("Välj endast mellan 1 till 5")
 
 
-                                    if charge==1:
-                                        points.add_saldo(Saldo_Menu(100))
-                                    elif charge==2:
-                                        points.add_saldo(Saldo_Menu(150))
-                                    elif charge==3:
-                                        points.add_saldo(Saldo_Menu(500))
+    def run_main_menu(self):
+        self.print_main_menu()
+        choice = input("Ange ditt val: ")
+        choice = int(choice)
+        if choice == 1:
+            self.run_saldo_menu()
+        if choice == 2:
+            pass
+        if choice == 3:
+            pass
+        else:
+            print("felaktig inmatning")
 
-                                    elif charge==4:
-                                        points.add_saldo(Saldo_Menu(1000))
+    def print_saldo_menu(self):
+        print("Saldomeny:")
+        print("1.Aktuellt saldo")
+        print("2.Spenderade poäng")
+        print("3.Plånboken")
+        print("4.Kontoladning")
+        print("5.Exit")
 
-                                    elif charge==5:
-                                        break
+
+    def run_saldo_menu(self):
+        self.print_saldo_menu()
+        choice = input("Ange ditt val: ")
+        choice = int(choice)
+        if choice == 1:
+            self.points.print_saldo(self.saldo.spenderade_point, self.saldo.saldo)
+        if choice == 2:
+            self.points.print_list(self.saldo)
+        if choice == 3:
+            pass
+        else:
+            print("felaktig inmatning")
 
 
-                            elif chooise==5:
-                                break
-                    if choise == 2:
-                       print("¤¤¤¤¤¤Snack Meny¤¤¤¤¤¤")
-                       print("1:Snack pris 20p")
-                       print("2:Dricka pris 20p")
-                       print("3:Combo pris 30p")
-                       print("4.Exit")
-                       val=int(input("Välj:"))
-                       if val==1:
+    def print_kiosk_menu(self):
+        print("Snack Meny")
+        print("1:Snack pris 20p")
+        print("2:Dricka pris 20p")
+        print("3:Combo pris 30p")
+        print("4.Exit")
 
-                          point.spenderade_point=snack.snack
-                          points.add_saldo(point)
-                       elif val==2:
-                          point.spenderade_point=drink.drink
-                          points.add_saldo(point)
-                       elif val==3:
+    def run_kiosk_menu(self):
+        pass
 
-                          point.spenderade_point=combo.snack
-                          point.spenderade_point=combo.drink
-                          points.add_saldo(point)
+    def print_booking_menu(self):
+        print("*" * 50)
+        print(f"1: Sound Of Music")
+        print(f"2: Ragnarök")
+        print(f"3: Surviving Summer")
+        print(f"4: Boka film")
+        print("*" * 50)
 
-                       elif val==4:
-                           break
+    def run_booking_menu(self):
 
-                    if choise == 3:
-                        print("*" * 50)
-                        print(f"1: Sound Of Music")
-                        print(f"2: Ragnarök")
-                        print(f"3: Surviving Summer")
-                        print(f"4: Boka film")
-                        print("*" * 50)
-                        try:
-                            val3 =input("Välj vilken film du vill läsa om:")
-                            val3=int(val3)
-                        except ValueError:
-                            print("Välj endast mellan 1 till 4!")
-                        if val3 == 1:
-                            print("*" * 19)
-                            print(movie_info.format_movie(movie_info.movie_svea()))
-                            print("*" * 111)
-                        elif val3 == 2:
-                            print("*" * 14)
-                            print(movie_info.format_movie(movie_info.movie_thor()))
-                            print("*" * 119)
-                        elif val3 == 3:
-                            print("*" * 21)
-                            print(movie_info.format_movie(movie_info.movie_greta()))
-                            print("*" * 94)
-                        elif val3 == 4:
-                            print("*" * 50)
-                            print(f"1: {salong1} och visar filmen Sound Of Music")
-                            print(f"2: {salong2} och visar filmen Ragnarök")
-                            print(f"3: {salong3} och visar filmen Surviving Summer")
-                            print("*" * 50)
-                            try:
-                                val4 = input("Välj vilken film du vill boka")
-                                val4=int(val4)
-                            except ValueError:
-                                print("Välj endast mellan 1 till 3!")
-                            if val4 == 1:
-                                print("*" * 10)
-                                print("Du har bokat filmen Sound Of Music")
-                                print(f"Som visas i salong {salong1.namn} och kostar {salong1.pris} Poäng")
-                                bonus=10
-                                point.bonus=bonus
-                                point.spenderade_point = salong1.pris
-                                points.add_saldo(point)
-                                print("*" * 10)
-                            elif val4 == 2:
-                                print("*" * 10)
-                                print("Du har bokat filmen Ragnarök")
-                                print(f"Som visas i salong {salong2.namn} och kostar {salong2.pris} Poäng")
-                                bonus = 10
-                                point.bonus=bonus
-                                point.spenderade_point = salong2.pris
-                                points.add_saldo(point)
-                                print("*" * 10)
-                            elif val4 == 3:
-                                print("*" * 10)
-                                print("Du har bokat filmen Surviving Summer")
-                                print(f"Som visas i salong {salong3.namn} och kostar {salong3.pris} Poäng")
-                                bonus = 10
-                                point.bonus=bonus
-                                point.spenderade_point = salong3.pris
-                                points.add_saldo(point)
-                                print("*" * 10)
-                    if choise == 5:
-                        break
+        print("1. 100p =100kr")
+        print("2. 150p =150kr")
+        print("3. 500p =500kr")
+        print("4. 1000p =1000kr")
+        print("5. Exit")
+        print("Välj summan som du vill ladda!")
 
+
+def main():
+    a = Menus()
+    a.run_new_user_menu()
 
 if __name__ == "__main__":
 
