@@ -10,11 +10,9 @@ class Movie_info:
         result = result.replace(';', '\n')
         return result
 
-
     def movie_svea(self):
         with open("svea.txt", "r", encoding="utf-8") as i:
             return i.readlines()
-
 
     def movie_thor(self):
         with open("thor.txt", "r", encoding="utf-8") as i:
@@ -23,15 +21,11 @@ class Movie_info:
     def movie_greta(self):
         with open("greta.txt", "r", encoding="utf-8") as i:
             return i.readlines()
-
-
 class Salon:
-
     def __init__(self, namn, pris, seats):
         self.namn = namn
         self.pris = pris
         self.seats = seats
-
 
     def __str__(self):
         return f"{self.namn} har {self.pris} platser och kostar {self.seats} poäng"
@@ -50,11 +44,8 @@ class Person:
     def __str__(self):
         return f"{self.firstname}, {self.lastname}, {self.personalnumber}"
 
-
     def __repr__(self):
         return f"{self.firstname}, {self.lastname}, {self.personalnumber}"
-
-
 
 class Person_Collection:
     def __init__(self):
@@ -66,17 +57,12 @@ class Person_Collection:
     def print_list(self):
         return print(self.List_of_all_members)
 
-
-
 class Saldo_Menu:
 
     def __init__(self,saldo=0,spenderade_point=0,bonus=0):
         self.saldo=saldo
         self.spenderade_point=spenderade_point
         self.bonus=bonus
-
-
-
     def __str__(self):
         return f"{self.saldo},{self.spenderade_point}, "
 
@@ -91,9 +77,6 @@ class Saldo_Menu:
             return self.saldo
         else:
             print(str(self.saldo) + "Kr har sparats")
-
-
-
 class Point:
 
     def __init__(self):
@@ -199,6 +182,7 @@ def main():
             if i in numbers:
                 while True:
                     print("1. Saldokollen")
+
                     print("2. Handla i kiosk")
                     print("3. Kolla aktuella filmer")
                     print("4. Avsluta programmet")
@@ -247,7 +231,6 @@ def main():
                                     except ValueError:
                                         print("Välj endast mellan 1 till 5")
 
-
                                     if charge==1:
                                         points.add_saldo(Saldo_Menu(100))
                                     elif charge==2:
@@ -261,7 +244,6 @@ def main():
                                     elif charge==5:
                                         break
 
-
                             elif chooise==5:
                                 break
                     if choise == 2:
@@ -272,7 +254,6 @@ def main():
                        print("4.Exit")
                        val=int(input("Välj:"))
                        if val==1:
-
                           point.spenderade_point=snack.snack
                           points.add_saldo(point)
                        elif val==2:
@@ -349,8 +330,12 @@ def main():
                                 point.spenderade_point = salong3.pris
                                 points.add_saldo(point)
                                 print("*" * 10)
-                    if choise == 5:
+                    if choise == 4:
+
                         break
+
 if __name__ == "__main__":
+
+
 
     main()

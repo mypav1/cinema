@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c15e4e-6583-4f34-aa5d-30b3b86ba05b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Personregister.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Personregister.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tarlans_arbete.py" beforeDir="false" afterPath="$PROJECT_DIR$/tarlans_arbete.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,27 +26,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Personregister" value="1" />
+          <entry key="PointSystem" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="py" value="20" />
+          <entry key="py" value="23" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="20" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="Python" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Personregister" value="36" />
-          <entry key="py" value="10334" />
+          <entry key="py" value="12207" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="36" />
-          <entry key="Python" value="10334" />
+          <entry key="PLAIN_TEXT" value="37" />
+          <entry key="Python" value="12207" />
         </counts>
       </usages-collector>
     </session>
@@ -54,16 +58,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tarlans_arbete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="169" column="36" selection-start-line="169" selection-start-column="36" selection-end-line="169" selection-end-column="36" />
+            <state relative-caret-position="4238">
+              <caret line="328" column="34" selection-start-line="328" selection-start-column="34" selection-end-line="328" selection-end-column="34" />
               <folding>
-                <marker date="1542109766096" expanded="true" signature="1965:1970" ph="..." />
-                <marker date="1542109766096" expanded="true" signature="3532:3533" ph="..." />
-                <marker date="1542109766096" expanded="true" signature="3722:3727" ph="..." />
+                <marker date="1542119700530" expanded="true" signature="13076:13078" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OBJEKTORIENTERAT.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-233">
+              <caret line="355" column="47" lean-forward="true" selection-start-line="355" selection-start-column="47" selection-end-line="355" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -100,6 +111,15 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PointSystem.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -127,17 +147,19 @@
         <option value="$PROJECT_DIR$/Personregister" />
         <option value="$PROJECT_DIR$/Poäng system.py" />
         <option value="$PROJECT_DIR$/Mainmenu.py" />
-        <option value="$PROJECT_DIR$/Personregister.txt" />
         <option value="$PROJECT_DIR$/Snack_menu.py" />
         <option value="$PROJECT_DIR$/Filmer.py" />
         <option value="$PROJECT_DIR$/svea.txt" />
         <option value="$PROJECT_DIR$/greta.txt" />
         <option value="$PROJECT_DIR$/thor.txt" />
+        <option value="$PROJECT_DIR$/PointSystem.txt" />
+        <option value="$PROJECT_DIR$/Personregister.txt" />
         <option value="$PROJECT_DIR$/tarlans_arbete.py" />
+        <option value="$PROJECT_DIR$/OBJEKTORIENTERAT.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="697" />
@@ -178,7 +200,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tarlans_arbete (1)">
+  <component name="RunManager" selected="Python.OBJEKTORIENTERAT">
     <configuration name="MainMenu" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="biografi" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -221,6 +243,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="OBJEKTORIENTERAT" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="biografi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OBJEKTORIENTERAT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Poäng system" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="biografi" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -234,27 +277,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Poäng system.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Salong" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="biografi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Salong.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -288,16 +310,16 @@
       <item itemvalue="Python.tarlans_arbete (1)" />
       <item itemvalue="Python.Poäng system" />
       <item itemvalue="Python.MainMenu" />
-      <item itemvalue="Python.Salong" />
       <item itemvalue="Python.Mainmenu" />
+      <item itemvalue="Python.OBJEKTORIENTERAT" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.OBJEKTORIENTERAT" />
         <item itemvalue="Python.tarlans_arbete (1)" />
         <item itemvalue="Python.Mainmenu" />
         <item itemvalue="Python.Poäng system" />
         <item itemvalue="Python.MainMenu" />
-        <item itemvalue="Python.Salong" />
       </list>
     </recent_temporary>
   </component>
@@ -319,10 +341,10 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49292454" visible="true" weight="0.18080357" />
-      <window_info id="Structure" order="1" sideWeight="0.5070755" side_tool="true" visible="true" weight="0.18080357" />
+      <window_info id="Structure" order="1" sideWeight="0.5070755" side_tool="true" weight="0.18080357" />
       <window_info id="Favorites" order="2" sideWeight="0.5012225" side_tool="true" weight="0.24330357" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.30491802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -380,16 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thor.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Personregister.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/urllib/parse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -404,15 +416,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/thor.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PointSystem.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Personregister.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/tarlans_arbete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="169" column="36" selection-start-line="169" selection-start-column="36" selection-end-line="169" selection-end-column="36" />
+        <state relative-caret-position="4238">
+          <caret line="328" column="34" selection-start-line="328" selection-start-column="34" selection-end-line="328" selection-end-column="34" />
           <folding>
-            <marker date="1542109766096" expanded="true" signature="1965:1970" ph="..." />
-            <marker date="1542109766096" expanded="true" signature="3532:3533" ph="..." />
-            <marker date="1542109766096" expanded="true" signature="3722:3727" ph="..." />
+            <marker date="1542119700530" expanded="true" signature="13076:13078" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OBJEKTORIENTERAT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="355" column="47" lean-forward="true" selection-start-line="355" selection-start-column="47" selection-end-line="355" selection-end-column="47" />
         </state>
       </provider>
     </entry>
