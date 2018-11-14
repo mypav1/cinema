@@ -1,3 +1,9 @@
+import tkinter
+import tkinter.messagebox
+
+window = tkinter.Tk()
+window.title("BIO")
+
 class Movie_info:
     def __init__(self):
         self.svea = self.format_movie(self.movie_svea())
@@ -142,7 +148,6 @@ class Combo_menu(Drink_menu, Snack_menu):
 
 class Menus:
     def __init__(self):
-
         self.person = Person()
         self.persons = Person_collection()
         self.saldo = Saldo_Menu()
@@ -160,6 +165,8 @@ class Menus:
         print("Tryck 1 för att spara personuppgifter")
         print("Tryck 2 för att visa sparade personuppgifter")
         print("Tryck 3 för att gå till huvudmenyn!")
+        print("*" * 25)
+
 
     def run_new_user_menu(self):
         while True:
@@ -167,8 +174,11 @@ class Menus:
             try:
                 choice = input("Ange ditt val: ")
                 choice = int(choice)
+                print("*" * 25)
             except ValueError:
-                print("-------------!!!!!FELAKTIG INMATNING!!!!!!----------")
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
             if choice == 1:
                 self.person.input_person_info()
             elif choice == 2:
@@ -177,8 +187,23 @@ class Menus:
                 i = input("Skriv din personnummer!:")
                 numbers = [line.split(';')[2].rstrip() for line in open('Personregister.txt', 'r')]
                 if i in numbers:
-                    self.run_main_menu()
+                    tkinter.messagebox.showinfo("BIOGRAFEN MEDDELAR", "VÄLKOMMEN KÄRA KUND!")
 
+                    response = tkinter.messagebox.askquestion("BIOGRAFEN", "ÄR DU NY KUND?")
+                    if response == 1:
+                        tkinter.Label(window, text="---VÄLKOMMEN HOPPAS DU BLIR NÖJD IDAG---",
+                                      font=("Arial Bold", 20)).pack()
+                        tkinter.Label(window, text="STÄNG NER FÖR ATT GÅ VIDARE!", font=("Arial", 10)).pack()
+                    else:
+                        tkinter.Label(window, text="---VÄLKOMMEN HOPPAS DU BLIR NÖJD IDAG---", font=("Arial Bold", 20)).pack()
+                        tkinter.Label(window, text="STÄNG NER FÖR ATT GÅ VIDARE!",font=("Arial", 10)).pack()
+
+                    window.mainloop()
+                    self.run_main_menu()
+            else:
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
 
     def print_main_menu(self):
         print("1. Saldokollen")
@@ -194,8 +219,11 @@ class Menus:
             try:
                 choice = input("Ange ditt val: ")
                 choice = int(choice)
+                print("*" * 25)
             except ValueError:
-                print("-------------!!!!!FELAKTIG INMATNING!!!!!!----------")
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
             if choice == 1:
                 self.run_saldo_menu()
             if choice == 2:
@@ -204,7 +232,10 @@ class Menus:
                 self.run_booking_menu()
             elif choice==4:
               exit(self.run_new_user_menu())
-
+            else:
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
 
     def print_saldo_menu(self):
         print("Saldomeny:")
@@ -213,6 +244,7 @@ class Menus:
         print("3.Plånboken")
         print("4.Kontoladning")
         print("5.Exit")
+        print("*" * 25)
 
     def run_saldo_menu(self):
         while True:
@@ -220,8 +252,11 @@ class Menus:
             try:
                 choice = input("Ange ditt val: ")
                 choice = int(choice)
+                print("*" * 25)
             except ValueError:
-                print("-------------!!!!!FELAKTIG INMATNING!!!!!!----------")
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
             if choice == 1:
                 self.points.print_saldo(self.saldo.spenderade_point, self.saldo.saldo)
             if choice == 2:
@@ -232,7 +267,10 @@ class Menus:
                 self.run_kontolad_menu()
             elif choice==5:
                 exit(self.run_main_menu())
-
+            else:
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
 
     def print_kiosk_menu(self):
         print("Snack Meny")
@@ -240,6 +278,7 @@ class Menus:
         print("2:Dricka pris 20p")
         print("3:Combo pris 30p")
         print("4.Exit")
+        print("*" * 25)
 
     def run_kiosk_menu(self):
         while True:
@@ -247,9 +286,11 @@ class Menus:
             try:
                 Chooise=input("Välj en av alternativen!")
                 Chooise=int(Chooise)
+                print("*" * 25)
             except ValueError:
-                print("-------------!!!!!FELAKTIG INMATNING!!!!!!----------")
-
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
             if Chooise==1:
                 self.saldo.spenderade_point = self.snack.snack
                 self.points.add_saldo(self.saldo)
@@ -261,7 +302,10 @@ class Menus:
                 self.points.add_saldo(self.saldo)
             elif Chooise==4:
                 exit(self.run_main_menu())
-
+            else:
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
     def print_booking_menu(self):
         print("*" * 50)
         print(f"1: Sound Of Music")
@@ -277,8 +321,11 @@ class Menus:
             try:
                 Chooise=input("Välj en av alternativ!")
                 Chooise=int(Chooise)
+                print("*" * 25)
             except ValueError:
-                print("-------------!!!!!FELAKTIG INMATNING!!!!!!----------")
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
 
             if Chooise==1:
                 print("*" * 19)
@@ -297,7 +344,10 @@ class Menus:
 
             elif Chooise ==5:
                 exit(self.run_main_menu())
-
+            else:
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
     def print_film_meny(self):
         print("*" * 50)
         print(f"1: {self.salong1} och visar filmen Sound Of Music")
@@ -312,8 +362,11 @@ class Menus:
             try:
                 val4 = input("Välj vilken film du vill boka")
                 val4 = int(val4)
+                print("*" * 25)
             except ValueError:
-                print("-------------!!!!!FELAKTIG INMATNING!!!!!!----------")
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
             if val4 == 1:
                 print("*" * 10)
                 print("Du har bokat filmen Sound Of Music")
@@ -343,7 +396,10 @@ class Menus:
                 print("*" * 10)
             elif val4==4:
                 exit(self.run_booking_menu())
-
+            else:
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
 
 
 
@@ -354,6 +410,7 @@ class Menus:
         print("4. 1000p =1000kr")
         print("5. Exit")
         print("Välj summan som du vill ladda!")
+        print("*" * 25)
 
     def run_kontolad_menu(self):
         while True:
@@ -361,8 +418,11 @@ class Menus:
             try:
                 Chooise=input("Välj en av alternativ!")
                 Chooise=int(Chooise)
+                print("*" * 25)
             except ValueError:
-                print("-------------!!!!!FELAKTIG INMATNING!!!!!!----------")
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
 
             if Chooise==1:
                 self.points.add_saldo(Saldo_Menu(100))
@@ -374,9 +434,13 @@ class Menus:
                 self.points.add_saldo(Saldo_Menu(1000))
             elif Chooise==5:
                 exit(self.run_saldo_menu())
-
+            else:
+                print("Tryck OK för att fortsätta!")
+                tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
+                continue
 
 def main():
+
     a = Menus()
     a.run_new_user_menu()
 
