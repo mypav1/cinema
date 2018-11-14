@@ -335,7 +335,7 @@ class Menus:
             elif val4 == 3:
                 print("*" * 10)
                 print("Du har bokat filmen Surviving Summer")
-                print(f"Som visas i salong {salong3.namn} och kostar {salong3.pris} Poäng")
+                print(f"Som visas i salong {self.salong3.namn} och kostar {self.salong3.pris} Poäng")
                 bonus = 10
                 self.saldo.bonus = bonus
                 self.saldo.spenderade_point = self.salong3.pris
