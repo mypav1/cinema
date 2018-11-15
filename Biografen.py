@@ -42,23 +42,19 @@ class Person:
         self.lastname = last
         self.personalnumber = persno
 
+
     def __str__(self):
         return f"{self.firstname}, {self.lastname}, {self.personalnumber}"
 
     def __repr__(self):
         return f"{self.firstname}, {self.lastname}, {self.personalnumber}"
 
-    def input_person_info(self):
-        self.first = input("Skriv in ditt förnamn:")
-        self.last = input("Skriv in ditt efternamn:")
-        self.persno = input("Skriv in ditt personnr:")
-        with open("Personregister.txt", "a")as f:
-            f.write(f"{self.first};{self.last};{self.persno}\n")
-        return self
+
 
 class Person_collection:
     def __init__(self):
         self.List_of_all_members = []
+
 
     def add_person(self, person):
         self.List_of_all_members.append(person)
@@ -83,12 +79,10 @@ class Saldo_Menu:
     def info (self):
 
         if self.saldo == 0:
-            print("Tyvär du har inte tillräcklig med poäng!" + "--" + str(self.saldo) + "Kr")
+            print("Tyvär du har inte tillräcklig med poäng!" + "--" + str(self.saldo))
             return self.saldo
         else:
-            print(str(self.saldo) + "Kr har sparats")
-
-
+            print(str(self.saldo) + "Poäng har sparats")
 
 class Point:
 
@@ -101,7 +95,7 @@ class Point:
 
     def print_saldo(self, spenderade_point,saldo):
         if spenderade_point>=0:
-            print(str(sum(([value.saldo for value in self.list_saldo]+[value.bonus for value in self.list_saldo])) - spenderade_point) + "Kr har kvar i kontot")
+            print(str(sum(([value.saldo for value in self.list_saldo]+[value.bonus for value in self.list_saldo])) - spenderade_point)+" " + "Poäng kvar på kontot")
         elif spenderade_point>saldo:
             print("Tyvärr går ej handla mer än det som du har!")
         else:
@@ -132,18 +126,14 @@ class Drink_menu:
    def __repr__(self):
        return f"{self.drink}, {self.p} points"
 
-class Combo_menu(Drink_menu, Snack_menu):
-   def __init__(self, drink=15, snack=15):
-       Drink_menu.__init__(self, drink)
-       Snack_menu.__init__(self, snack)
-
-   def calc_combo(self):
-       self.combo=self.snack+self.drink
-
+class Combo_menu:
+   def __init__(self, combo=30):
+       self.combo = combo
    def __str__(self):
-       return f"{self.snack}, {self.drink}, {self.p} points"
+       return f"{self.combo}, {self.p} points"
+
    def __repr__(self):
-       return f"{self.snack}, {self.drink}, {self.p} points"
+       return f"{self.combo}, {self.p} points"
 
 
 class Menus:
@@ -180,7 +170,14 @@ class Menus:
                 tkinter.messagebox.showinfo("-------------!!!!!OBS!!!!!!----------", "FELAKTIG INMATNING!!!")
                 continue
             if choice == 1:
-                self.person.input_person_info()
+                self.first = input("Skriv in ditt förnamn:")
+                self.last = input("Skriv in ditt efternamn:")
+                self.persno = input("Skriv in ditt personnr:")
+                with open("Personregister.txt", "a")as f:
+                    f.write(f"{self.first};{self.last};{self.persno}\n")
+                self.persons.add_person(self.first)
+                self.persons.add_person(self.last)
+                self.persons.add_person(self.persno)
             elif choice == 2:
                 self.persons.print_list()
             elif choice == 3:
@@ -188,7 +185,6 @@ class Menus:
                 numbers = [line.split(';')[2].rstrip() for line in open('Personregister.txt', 'r')]
                 if i in numbers:
                     tkinter.messagebox.showinfo("BIOGRAFEN MEDDELAR", "VÄLKOMMEN KÄRA KUND!")
-
                     response = tkinter.messagebox.askquestion("BIOGRAFEN", "ÄR DU NY KUND?")
                     if response == 1:
                         tkinter.Label(window, text="---VÄLKOMMEN HOPPAS DU BLIR NÖJD IDAG---",
@@ -259,9 +255,9 @@ class Menus:
                 continue
             if choice == 1:
                 self.points.print_saldo(self.saldo.spenderade_point, self.saldo.saldo)
-            if choice == 2:
+            elif choice == 2:
                 self.points.print_list(self.saldo)
-            if choice == 3:
+            elif choice == 3:
                 self.saldo.info()
             elif choice==4:
                 self.run_kontolad_menu()
